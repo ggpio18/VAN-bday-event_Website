@@ -4,8 +4,196 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bday_event_website</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="close-btn">&times;</div>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#photo-booth">Photo Booth</a></li>
+            <li><a href="#playlist">Playlist</a></li>
+            <li><a href="#messages">Messages</a></li>
+            <li><a href="#rsvp">RSVP</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Sarah's 30th Birthday Bash!</h1>
+            <p>Join us for an unforgettable celebration!</p>
+            <div class="countdown">
+                <div class="countdown-item">
+                    <span id="days">00</span>
+                    <p>Days</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours">00</span>
+                    <p>Hours</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes">00</span>
+                    <p>Minutes</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds">00</span>
+                    <p>Seconds</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule" class="schedule">
+        <div class="container">
+            <h2 class="fade-in">Event Schedule</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>6:00 PM</h3>
+                        <p>Guests Arrival & Welcome Drinks</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>7:00 PM</h3>
+                        <p>Dinner Served</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>8:30 PM</h3>
+                        <p>Birthday Cake & Toasts</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>9:00 PM</h3>
+                        <p>Dance Party Begins</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>11:00 PM</h3>
+                        <p>Surprise Performance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="fade-in">Memories Through the Years</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in">
+                    <img src="/placeholder.svg?height=300&width=300" alt="Sarah's 5th birthday">
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="/placeholder.svg?height=300&width=300" alt="Sarah's 16th birthday">
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="/placeholder.svg?height=300&width=300" alt="Sarah's 21st birthday">
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="/placeholder.svg?height=300&width=300" alt="Sarah's 25th birthday">
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="/placeholder.svg?height=300&width=300" alt="Sarah with friends">
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="/placeholder.svg?height=300&width=300" alt="Sarah's family photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="photo-booth"   class="photo-booth">
+        <div class="container">
+            <h2 class="fade-in">Strike a Pose!</h2>
+            <p class="fade-in">Capture your memories in our virtual photo booth</p>
+            <div class="booth-container">
+                <div class="booth-frame fade-in">
+                    <p>Your photo here!</p>
+                </div>
+                <div class="booth-frame fade-in">
+                    <p>Smile for the camera!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rsvp" class="cta">
+        <div class="container fade-in">
+            <h2>Don't Miss the Party!</h2>
+            <p>RSVP now and join us for an unforgettable celebration.</p>
+            <a href="#" class="cta-button">RSVP Now</a>
+        </div>
+    </section>
+
+    <section id="playlist" class="music-playlist">
+        <div class="container">
+            <h2 class="fade-in">Sarah's Birthday Playlist</h2>
+            <div class="playlist-container fade-in">
+                <div class="playlist-item">
+                    <i class="fas fa-music"></i>
+                    <p>"Dancing Queen" by ABBA</p>
+                </div>
+                <div class="playlist-item">
+                    <i class="fas fa-music"></i>
+                    <p>"Don't Stop Believin'" by Journey</p>
+                </div>
+                <div class="playlist-item">
+                    <i class="fas fa-music"></i>
+                    <p>"I Wanna Dance with Somebody" by Whitney Houston</p>
+                </div>
+                <div class="playlist-item">
+                    <i class="fas fa-music"></i>
+                    <p>"Uptown Funk" by Mark Ronson ft. Bruno Mars</p>
+                </div>
+                <div class="playlist-item">
+                    <i class="fas fa-music"></i>
+                    <p>"Can't Stop the Feeling!" by Justin Timberlake</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="messages" class="blog-slider">
+        <div class="container">
+            <h2 class="fade-in">Birthday Wishes</h2>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide fade-in">
+                        <h3>From Best Friend</h3>
+                        <p>"Happy 30th birthday, Sarah! May this new decade bring you endless joy, success, and unforgettable adventures. You're not just getting older, you're getting better!"</p>
+                    </div>
+                    <div class="slide fade-in">
+                        <h3>From Family</h3>
+                        <p>"To our dearest Sarah, happy 30th birthday! We're so proud of the amazing woman you've become. Here's to 30 more years of laughter, love, and making beautiful memories together!"</p>
+                    </div>
+                    <div class="slide fade-in">
+                        <h3>From Coworkers</h3>
+                        <p>"Happy 30th birthday to an incredible colleague and friend! Sarah, your positivity and dedication inspire us all. Wishing you a fantastic year ahead filled with success and happiness!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Sarah's 30th Birthday Bash. Made with ❤️ by ggpio18</p>
+        </div>
+    </footer>
+
     
 </body>
 </html>
